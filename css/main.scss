@@ -109,6 +109,7 @@ a {
 .product {
     &__tab {
         text-align: center;
+        padding-left: 0;
         li {
             display: inline-block;
             list-style: none;
@@ -236,3 +237,52 @@ a {
         }
     }
 }
+@media (max-width: 991.98px) {
+    .product{
+        .row {
+            justify-content: flex-start!important;
+        }
+        &__card .card {
+            .card-body{ 
+                bottom: 0;
+                .btn {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+ }
+ @media (max-width: 767.98px) {
+    .container-fluid {
+        padding: 0 1rem;
+    }
+    .navbar-brand img {
+        width: 150px;
+    }
+    .about {
+        text-align: center;
+        .img{
+            margin-bottom: 1rem;
+            img {
+                width: 100px;
+            }
+        }
+    }
+    .product__tab li {
+        padding: 0 .5rem;
+        img {
+            width: 70px;
+            &.img1 {
+                width: 50px;
+            }
+        }
+    }
+    footer {
+        .main img {
+            width: 150px;
+        }
+    }
+    .footer__bottom img {
+        width: 60px;
+    }
+ }
