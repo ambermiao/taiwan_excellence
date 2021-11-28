@@ -1,0 +1,203 @@
+body {
+    color: #261f1d;
+}
+.container-fluid {
+    padding: 0 2rem;
+}
+.btn-primary {
+    background-color: #e50020;
+    border-color: #e50020;
+}
+.text-primary {
+    color: #e50020!important;
+}
+.title {
+    position: relative;
+    padding-bottom: 1rem;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 50px;
+        height: 5px;
+        margin-left: -25px;
+        background-color: #e50020;
+        border-radius: 10px;
+        z-index: -1;
+    }
+}
+.demo {
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-light .navbar-nav .nav-item {
+    .nav-link {
+        padding: .5rem 1.5rem;
+        color: #261f1d;
+        &.active,&:hover {
+            color: #e4001f;
+        }
+    }
+    &:last-child .nav-link {
+        padding-right: 0;
+    }
+}
+.banner {
+    background: rgb(160,169,236);
+    background: linear-gradient(180deg, rgba(160,169,236,1) 0%, rgba(160,198,245,1) 100%);
+    position: relative;
+    margin-top: 81px;
+    padding-bottom: 150px;
+}
+.youtube {
+    margin-top: -100px;
+}
+.live {
+    .row {
+        border-radius: .25rem;
+    }
+}
+.venue {
+    &__card {
+        position: relative;
+        cursor: pointer;
+        
+        .img {
+            background-color: #000;
+            overflow: hidden;
+            img {
+                -webkit-filter:opacity(.6);
+                transition: all .3s ease;
+            }
+        }
+        .txt {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            padding: 1rem;
+        }
+        .btn {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 30px;
+            opacity: 0;
+            transition: all .3s ease;
+        }
+        &:hover {
+            .img {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            .btn {
+                margin-top: 0;
+                opacity: 1;
+            }
+        }
+    }
+    
+}
+.product {
+    &__tab {
+        text-align: center;
+        li {
+            display: inline-block;
+            list-style: none;
+            padding: 0 1rem;
+            cursor: pointer;
+            img {
+                width: 120px;
+                -webkit-filter:grayscale(1);
+                opacity: .5;
+                transition: all .3s ease;
+            }
+            &.current img,&:hover img {
+                -webkit-filter: none;
+                opacity: 1;
+            }
+        }
+    }
+    &__box {
+        min-height: 260px;
+    }
+    &__card .card {
+        cursor: pointer;
+        position: relative;
+        border: none;
+        overflow: hidden;
+        .img {
+            background-color: #000;
+            overflow: hidden;
+            img {
+                transition: all .3s ease;
+            }
+        }
+        .card-body{
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            color: #fff;
+            transition: all .3s ease;
+            background-color: rgba(#e50020,.5);
+            transition: all .3s ease;
+            .btn {
+                opacity: 0;
+            }
+        }
+        &:hover {
+            .img {
+                img {
+                    opacity: .5;
+                    transform: scale(1.1);
+                }
+            }
+            .card-body{
+                bottom: 0;
+                .btn {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.about {
+    background: rgb(160,169,236);
+    background: linear-gradient(180deg, rgba(160,169,236,1) 0%, rgba(160,198,245,1) 100%);
+}
+.share {
+    a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000;
+        border-radius: 100%;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 5px;
+        vertical-align: top;
+        cursor: pointer;
+        i {
+            line-height: 50px;
+        }
+        img {
+            vertical-align: bottom;
+            -webkit-filter:grayscale(1);
+        }
+        &:hover {
+            border-color: #e50020;
+            i {
+                color: #e50020;
+            }
+            img {
+                -webkit-filter: none;
+            }
+        }
+    }
+}

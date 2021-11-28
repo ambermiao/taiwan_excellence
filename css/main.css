@@ -1,0 +1,239 @@
+body {
+  color: #261f1d;
+}
+
+.container-fluid {
+  padding: 0 2rem;
+}
+
+.btn-primary {
+  background-color: #e50020;
+  border-color: #e50020;
+}
+
+.text-primary {
+  color: #e50020 !important;
+}
+
+.title {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.title:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50px;
+  height: 5px;
+  margin-left: -25px;
+  background-color: #e50020;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.demo {
+  color: #fff;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+  padding: .5rem 1.5rem;
+  color: #261f1d;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link.active, .navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: #e4001f;
+}
+
+.navbar-light .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+
+.banner {
+  background: #a0a9ec;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a0a9ec), to(#a0c6f5));
+  background: linear-gradient(180deg, #a0a9ec 0%, #a0c6f5 100%);
+  position: relative;
+  margin-top: 81px;
+  padding-bottom: 150px;
+}
+
+.youtube {
+  margin-top: -100px;
+}
+
+.live .row {
+  border-radius: .25rem;
+}
+
+.venue__card {
+  position: relative;
+  cursor: pointer;
+}
+
+.venue__card .img {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.venue__card .img img {
+  -webkit-filter: opacity(0.6);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.venue__card .txt {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 1rem;
+}
+
+.venue__card .btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 30px;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.venue__card:hover .img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.venue__card:hover .btn {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.product__tab {
+  text-align: center;
+}
+
+.product__tab li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.product__tab li img {
+  width: 120px;
+  -webkit-filter: grayscale(1);
+  opacity: .5;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.product__tab li.current img, .product__tab li:hover img {
+  -webkit-filter: none;
+  opacity: 1;
+}
+
+.product__box {
+  min-height: 260px;
+}
+
+.product__card .card {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.product__card .card .img {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.product__card .card .img img {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.product__card .card .card-body {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: rgba(229, 0, 32, 0.5);
+  transition: all .3s ease;
+}
+
+.product__card .card .card-body .btn {
+  opacity: 0;
+}
+
+.product__card .card:hover .img img {
+  opacity: .5;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.product__card .card:hover .card-body {
+  bottom: 0;
+}
+
+.product__card .card:hover .card-body .btn {
+  opacity: 1;
+}
+
+.about {
+  background: #a0a9ec;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a0a9ec), to(#a0c6f5));
+  background: linear-gradient(180deg, #a0a9ec 0%, #a0c6f5 100%);
+}
+
+.share a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 5px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.share a i {
+  line-height: 50px;
+}
+
+.share a img {
+  vertical-align: bottom;
+  -webkit-filter: grayscale(1);
+}
+
+.share a:hover {
+  border-color: #e50020;
+}
+
+.share a:hover i {
+  color: #e50020;
+}
+
+.share a:hover img {
+  -webkit-filter: none;
+}
+/*# sourceMappingURL=main.css.map */

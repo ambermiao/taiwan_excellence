@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <title>第31屆台灣精品獎（Taiwan Excellence Award）</title>
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">
+          <img src="images/logo.jpg" alt="" width="180">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#venue">獲獎企業</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">獲獎商品</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#question">問卷填寫</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="banner text-center pt-5 bg-dark bg-opacity-10">
+      <div class="container">
+        <h4 class="mt-2">台灣精品 精彩你的世界</h4>
+        <h2 class="mb-3 mt-3 text-primary">第31屆台灣精品獎（Taiwan Excellence Award）</h2>
+        <h4>台灣精品在這裡，通通佼出來</h4>
+      </div>
+    </section>
+    <section class="youtube">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="demo bg-secondary rounded" style="height: 300px;">DEMO1</div>
+            </div>
+            <div class="carousel-item">
+              <div class="demo bg-secondary rounded" style="height: 300px;">DEMO2</div>
+            </div>
+            <div class="carousel-item">
+              <div class="demo bg-secondary rounded" style="height: 300px;">DEMO3</div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="live py-5">
+      <div class="container">
+        <h2 class="title text-center mb-5">12/13直播資訊</h2>
+        <div class="row g-0 border border">
+          <div class="col-6">
+            <div class="demo bg-secondary rounded w-100 h-100">DEMO</div>
+          </div>
+          <div class="text col-6 p-5">
+            <p class="mb-1">現在就上直播，讓黃子佼帶你看台灣精品!</p>
+            <p class="mb-1">最創新的台灣精品 就在這次直播!</p>
+            <p class="mb-3">台灣精品 跟上未來節奏就在這次直播</p>
+            <p class="mb-0">直播時間: <span class="text-primary">2021/12/13(一)19:00準時上線</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="venue py-5 bg-dark bg-opacity-10" id="venue">
+      <div class="container">
+        <h2 class="title text-center mb-5">獲獎企業</h2>
+        <div class="row g-4">
+          <div class="col-6 venue__card">
+            <div class="img rounded">
+              <img class="w-100" src="images/venue1.jpg" alt="">
+            </div>
+            <div class="txt">
+              <h5>自行車文化探索館</h5>
+              <p class="mb-0">Discover the beauty of cycling</p>
+            </div>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#venue1">查看更多</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="venue1" tabindex="-1" aria-labelledby="venue1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="venue1Label">自行車文化探索館</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>自行車文化探索館是由巨大(捷安特)集團最新成立，用以推廣自行車新文化之場域。</p>
+                  <p>秉持著文化傳遞、生活互動與環境友善的理念，透過精心設計的互動裝置與體驗科技，顛覆一般民眾對自行車的傳統印象。</p>
+                  <p>展廳由1817年第一輛轉向雙輪車為開端，從歷史演變、產業發展，到深厚的工藝科學技術，再到全球的騎行文化與未來，循序漸進帶民眾認識自行車的不凡魅力。</p>
+                  <p class="mb-4">自行車文化探索館以推廣文化為使命，提供展廳導覽參觀、文創商店、咖啡輕食等服務。</p>
+                  <a class="btn btn-secondary" href="https://www.cyclingmuseum.com.tw/" target="_blank">前往官網</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 venue__card">
+            <div class="img rounded">
+              <img class="w-100" src="images/venue2.jpg" alt="">
+            </div>
+            <div class="txt">
+              <h5>艾瑪絲健髮中心</h5>
+              <p class="mb-0">讓頭皮擁有一整座森林的生命力</p>
+            </div>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#venue2">查看更多</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="venue2" tabindex="-1" aria-labelledby="venue2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="venue2Label">艾瑪絲健髮中心</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>艾瑪絲想深入服務有頭皮問題需要幫助的患者的理念，獲得恩主公醫院的認同，藉由艾瑪絲在頭皮理療上的專業，讓皮膚科能夠如虎添翼，更上層樓，因此攜手成立健髮中心。</p>
+                  <p>期待台灣皮膚科醫學領域針對專業頭皮理療能透過健髮中心的推廣及應用，達到雙贏的局面。</p>
+                  <p class="mb-4">透過專業頭皮檢測的服務，全方位了解頭皮健康與屬性，並針對頭皮狀況給予適當的保養方式，並推出居家頭皮養護三步驟，在家就能養護頭皮，給頭皮最好的照顧。</p>
+                  <a class="btn btn-secondary" href="https://www.aromase.com.tw/pages/center-1" target="_blank">前往官網</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 venue__card">
+            <div class="img rounded">
+              <img class="w-100" src="images/venue3.jpg" alt="">
+            </div>
+            <div class="txt">
+              <h5>祥儀機器人夢工廠</h5>
+              <p class="mb-0">「生活，即祥儀」</p>
+            </div>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#venue3">查看更多</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="venue3" tabindex="-1" aria-labelledby="venue3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="venue3Label">祥儀機器人夢工廠</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="mb-4">祥儀企業致力推廣機器人教育，打造全亞洲唯一機器人主題觀光工廠- 祥儀機器人夢工廠，千坪空間展示各式機器人主題裝置，規劃科技寶主題展示體驗區，以台北101積木建築、大型科技寶積木類生產線以及互動體驗裝置，讓民眾感受無限創想的科技魅力! 2020年成立祥儀創客實作中心，首推戰神探險車科技寶套件，規劃線上及實體階梯式課程，結合108課綱， 打造全齡化科技教育，從做中學、培育學生解決問題的全方位能力!</p>
+                  <a class="btn btn-secondary" href="https://robot.shayangye.com/" target="_blank">前往官網</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 venue__card">
+            <div class="img rounded">
+              <img class="w-100" src="images/venue4.jpg" alt="">
+            </div>
+            <div class="txt">
+              <h5>紙可拍松菸直營門市</h5>
+              <p class="mb-0">Create your life with FUN Fancy x Unique x Nature friendly</p>
+            </div>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#venue4">查看更多</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="venue4" tabindex="-1" aria-labelledby="venue4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="venue4Label">紙可拍松菸直營門市</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>「松菸風格店家」創意聚落，一個讓創作者、消費者、使用者交流對話的空間！ 紙可拍松菸直營門市，為品牌全球旗艦店，身為台灣品牌且得到TIME時代雜誌之2021 Best Innovation的肯定，我們每一款最新設計與新一代機心，都會於此旗艦店首發。</p>
+                  <p class="mb-4">現場除了有近百款的最新設計，同時也提供相機客製化的服務，可以為所有木質款相機雷刻刻字，讓客人不管是送禮或自己使用都具有獨特的意義！ 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                  <a class="btn btn-secondary" href="https://www.papershoot.com/" target="_blank">前往官網</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product py-5" id="product">
+      <div class="container">
+        <h2 class="title text-center mb-5">獲獎商品</h2>
+        <ul class="product__tab mb-5">
+          <li class="current">
+            <a data-bs-toggle="collapse" href="#tab1" role="button" aria-expanded="false" aria-controls="tab1"><img src="images/tab1.jpg" alt="" srcset=""></a>
+          </li>
+          <li>
+            <a data-bs-toggle="collapse" href="#tab2" role="button" aria-expanded="false" aria-controls="tab2"><img src="images/tab2.jpg" alt="" srcset=""></a>
+          </li>
+          <li>
+            <a data-bs-toggle="collapse" href="#tab3" role="button" aria-expanded="false" aria-controls="tab3"><img src="images/tab3.jpg" alt="" srcset=""></a>
+          </li>
+          <li>
+            <a data-bs-toggle="collapse" href="#tab4" role="button" aria-expanded="false" aria-controls="tab4"><img src="images/tab4.jpg" alt="" srcset=""></a>
+          </li>
+        </ul>
+        <div class="product__box">
+          <div class="row justify-content-center collapse show" id="tab1">
+            <div class="col-3 product__card">
+              <div class="card shadow">
+                <div class="img rounded"><img src="images/album1.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">常設展參觀體驗券</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product1">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product1" tabindex="-1" aria-labelledby="product1Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product1Label">自行車文化探索館 常設展參觀體驗券</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：免費～400元</p>
+                    <p class="mb-4">加入會員，預約參觀享9折！自行車文化探索館常設展共有八個展廳，從自行車的過去開始，透過體驗、故事、科學、藝術循序漸進認識自行車各式樣貌，從探索不一樣的經驗歷程，讓你越騎越開心，打開全新視野。 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.cyclingmuseum.com.tw/booking/" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 product__card">
+              <div class="card shadow rounded">
+                <div class="img rounded"><img src="images/album2.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">單車風格選物店</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product2">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product2" tabindex="-1" aria-labelledby="product2Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product2Label">自行車文化探索館 單車風格選物店</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：45元~1880元</p>
+                    <p class="mb-4">5種線上優惠任你挑！自行車文化探索館獨家打造的單車生活好物，送禮自用兩相宜，就是要為你的生活增添樂趣！ 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.pinkoi.com/store/cyclingculturemuseum" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center collapse" id="tab2">
+            <div class="col-3 product__card">
+              <div class="card shadow">
+                <div class="img rounded"><img src="images/product3.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">2% 5α捷利爾頭皮淨化液</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product3">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product3" tabindex="-1" aria-labelledby="product3Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product3Label">艾瑪絲AROMASE 2% 5α捷利爾頭皮淨化液 260mL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：350元</p>
+                    <p>艾瑪絲與皮膚科醫師邱品齊合作打造，專門針對頭皮問題及日常清潔保養所設計，以全草本植萃成分和液態水狀質地，軟化清潔頭皮及固態油脂堆積！</p>
+                    <p class="mb-4">艾瑪絲5α捷利爾頭皮淨化液，以獨特的明星成份「小分子甘草次酸複合物」發揮優異肌膚調理舒緩，協助肌膚抵禦外在刺激，小分子易於髮肌吸收，提升頭皮防護力；清新的植萃草本，散發森林般的清爽氣息，擁有自然髮膚洗沐的心曠神怡；清新薄荷草本香氣，讓洗後頭皮彷彿會呼吸般的清爽舒暢感。 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.aromase.com.tw/products/juniper-shampoo-260ml" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 product__card">
+              <div class="card shadow rounded">
+                <div class="img rounded"><img src="images/product4.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">強健豐盈洗髮精</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product4">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product4" tabindex="-1" aria-labelledby="product4Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product4Label">艾瑪絲AROMASE 強健豐盈洗髮精400mL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：550元</p>
+                    <p>艾瑪絲為「解決頭皮問題」而存在，所有頭皮問題都能被解決。制定七大健康洗髮精訴求，研發非藥用頭皮養護保養品，堅持「淨化頭皮健康養護」。</p>
+                    <p>強健豐盈洗髮精有效調理頭皮健康環境，強化頭皮防護機能、提供毛髮所需營養，讓髮絲維持活力，更健康強壯。</p>
+                    <p class="mb-4">設計面以缺角的瓶身設計傳遞理念，加入了盲人點字的功能，讓更多看不見的需求也被仔細設想到，堅持守護「看不見的缺角照護」的精神，希望頭皮也能成為每日清潔中無法忽視的存在。 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.aromase.com.tw/products/antihairloss-400ml" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 product__card">
+              <div class="card shadow rounded">
+                <div class="img rounded"><img src="images/product5.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">草本強健養髮精華液【涼感】</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product5">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product5" tabindex="-1" aria-labelledby="product5Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product5Label">艾瑪絲AROMASE 草本強健養髮精華液【涼感】115mL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：800元</p>
+                    <p>強健髮根、高效控油、去屑止癢，三效合一天然草本調理，有效舒緩頭皮不適。</p>
+                    <p>獨特噴頭設計，更均勻噴灑在頭皮處，搭配頭部按摩，在家也能享受頂級沙龍的養護效果!</p>
+                    <p>頂級明星保養成分甘草次酸，滲入加速草本吸收，舒緩穩定頭皮狀況。不含雌激素及西藥成分，從根本改善養髮問題，強韌髮質，實現豐盈髮量！</p>
+                    <p class="mb-4">添加甘草次酸、葡萄柚籽萃取、維他命B5、薄荷跟鉅棕櫚酊等成分，維持頭皮清爽之外，並能增加頭皮的防禦力，深層保濕修護。 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.aromase.com.tw/products/care-spary-cold-115ml" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center collapse" id="tab3">
+            <div class="col-3 product__card">
+              <div class="card shadow">
+                <div class="img rounded"><img src="images/product6.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">戰神探險車 Mars E1</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product6">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product6" tabindex="-1" aria-labelledby="product6Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product6Label">科技寶 CAGEBOT 戰神探險車 Mars E1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：3500元</p>
+                    <p class="mb-4">「CAGEBOT」工程教育積木，是一套專為落實科技領域而設計的教材積木，強調機構設計及跨領域整合。從積木骨件、連結件組合學習手工具應用，培養空間思維、邏輯規劃能力，多元相容的特性結合各式傳動機構、電控元件，自由創作出所有構想，讓學習落實應用在生活中。戰神探險車 Mars E1具備機構、傳動、程控三大方位，其電控系統並擁有紅外線、超音波、藍芽遙控、三點循跡、LED以及蜂鳴器等多項功能，搭載獨家開發Cagebot_blockly圖控程式，輕鬆進入機器人世界! 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.pcstore.com.tw/shayangye/M77789744.htm" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 product__card">
+              <div class="card shadow rounded">
+                <div class="img rounded"><img src="images/product6.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">動力機械套件組-動物園系列(吱吱頑皮猴/啾啾五色鳥/BOM BOM 大恐龍)</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product7">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product7" tabindex="-1" aria-labelledby="product7Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product7Label">科技寶 CAGEBOT 動力機械套件組-動物園系列(吱吱頑皮猴/啾啾五色鳥/BOM BOM 大恐龍)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：NT 1420~NT 2220 (另有嘖嘖優惠方案請洽導購連結)</p>
+                    <p>Build a robot on your own｜從科技寶工程積木開始，探索機械工程!</p>
+                    <p>快來打造屬於自己的動力機械仿生動物吧!!</p>
+                    <p class="mb-4">科技寶動力機構系列套件，拋棄傳統積木堆疊組裝方式，改採骨架式積木結合連接件，以螺絲鎖附方式固定，不僅可鍛鍊小肌肉與手工具的使用，更可以培養動力機構的組裝設計力與3D空間思維的邏輯思考力。以實際做、動手玩、玩中學的方式，輕鬆入門創客領域，認識機構學基礎，達成機構設計、機電整合與機電應用的學習，啟發機械工程創作潛力，讓學習落實在未來應用中。 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.zeczec.com/projects/cagebot-animalsparty" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center collapse" id="tab4">
+            <div class="col-3 product__card">
+              <div class="card shadow">
+                <div class="img rounded"><img src="images/product8.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">Thinkk & Shoot 相機</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product8">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product8" tabindex="-1" aria-labelledby="product8Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product8Label">紙可拍 PAPER SHOOT  Thinkk & Shoot 相機</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：6000元</p>
+                    <p class="mb-4">由紙可拍與泰國知名設計團隊Thinkk studio共同合作，打破傳統觀念打造出以「設計」為核心價值的環保相機！相機外殼突破天然材質的限制，表達出人文精神與自然關懷，同時帶給使用者前所未有的攝影體驗！ 相機結構利用相思木為主體，利用磁鐵即能輕易置入更換前面板的設計方式，輕鬆更換各種天然材質與手工藝所製成的前面板，第六代相機主機採用台灣大立光鏡頭，極簡化一鍵操作，除具備1600百萬像素之攝影功能之外，更擁有四色濾鏡、縮時攝影與10秒短視頻錄影。  而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.papershoot.com/" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 product__card">
+              <div class="card shadow rounded">
+                <div class="img rounded"><img src="images/product9.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">CROZ 晶透前衛相機/CROZ Vanguard camera</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product9">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product9" tabindex="-1" aria-labelledby="product9Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product9Label">紙可拍 PAPER SHOOT  CROZ 晶透前衛相機/CROZ Vanguard camera</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：4580元</p>
+                    <p class="mb-4">CROZ Vanguard 相機突破數位相機的刻板造型，全透明的「晶透外殼」運用壓克力與機板的特性及獨特工藝技術，展現對完美高質感的堅持，把極簡時尚的實用機能與美學設計感，發揮的更加淋漓盡致。晶透前衛數位相機的構造簡單且外型輕巧，擁有獨特透明純淨的機身外殼，使用耐刮耐壓的壓克力材質，且採一體成型、無上膠的特殊工法，呈現晶透與木紋的簡約質感，展現出匠心獨具的設計與高精湛的工藝水準。 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.papershoot.com/" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 product__card">
+              <div class="card shadow rounded">
+                <div class="img rounded"><img src="images/product9.jpg" class="card-img-top"></div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">紙相機系列</h6>
+                  <button type="button" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#product10">查看更多</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="product10" tabindex="-1" aria-labelledby="product10Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="product10Label">紙可拍 PAPER SHOOT 紙相機系列</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>售價：2999元</p>
+                    <p>秉持著Less is More為設計核心，<br/>將輕巧、極簡、環保的元素融合在相機之中。</p>
+                    <p>擁有獨家專利，全球之紙相機皆來自台灣，紙可拍也獲得了國內外設計獎與媒體的肯定，更被TIME雜誌選為2021 Best Innovation！現已能在全球16個國家購買紙可拍相機，也成為相機品牌中獨樹一格之新星！!</p>
+                    <p class="mb-4">相機結構利用環保石頭紙為主體，利用螺絲即可輕易更外殼的設計方式，輕鬆更換各種天然材質與手工藝所製成的紙外殼，第六代相機主機採用台灣大立光鏡頭，極簡化一鍵操作，除具備1600百萬像素之攝影功能之外，更擁有四色濾鏡、縮時攝影與10秒短視頻錄影。拍出之照片更獲得Amazon攝影作品集的收藏。 而我們有一個專門DIY 的空間，提供不同的材料例如：油性筆、紙膠帶、壓克力、蝶古巴特等等，讓客人自己去挑選，創造出獨一無二的相機！ 使用紙可拍拍完照，現場還有沖洗照片的服務！可以立即留下美好的回憶！</p>
+                    <a class="btn btn-secondary" href="https://www.papershoot.com/" target="_blank">詳細資訊</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="live py-5 bg-dark bg-opacity-10">
+      <div class="container">
+        <h2 class="title text-center mb-5">臉書貼文</h2>
+        <div class="demo bg-secondary rounded" style="height: 300px;">DEMO</div>
+      </div>
+    </section>
+    <section class="question py-5 text-center" id="question">
+      <h3 class="text-center mb-3">填問卷抽台灣精品！</h3>
+      <p>只要填寫問卷，就可以獲得體驗台灣精品機會。
+        <br/>簡單填寫、輕鬆獲得，點進連結直接得到機會</p>
+      <a href="https://www.taiwanexcellence.org/tw/award" target="_blank" class="btn btn-primary">點我填問卷</a>
+    </section>
+    <section class="about py-5 text-center">
+      <div class="container">
+        <img width="80" src="images/about2.png" alt="" class="mb-4">
+        <h3>台灣精品</h3>
+        <p class="text-primary">THE BEST MADE IN TAIWAN</p>
+        
+        <p class="h5 mb-4">臺灣產業精英的創新之選，給全世界質感生活的首選</p>
+        <p class="mb-4">臺灣產業精英的創新之選，給全世界質感生活的首選因為台灣精品，<br/>世界開始體驗新美好、探索新生活台灣精品，精彩每一天。</p>
+        <a href="https://www.taiwanexcellence.org/tw/award" target="_blank" class="btn btn-primary">了解更多</a>
+      </div>
+    </section>
+    <section class="share py-5 text-center bg-dark bg-opacity-10">
+      <h3 class="text-center mb-4">關注台灣精品獲得更多最新資訊</h3>
+      <div>
+        <a><img src="images/icon.png" width="24"/></a>
+        <a><i class="bi bi-facebook"></i></a>
+        <a><i class="bi bi-line"></i></a>
+        <a><i class="bi-youtube"></i></a>
+      </div>
+    </section>
+    <footer class="py-5 text-center">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <img class="mx-3" src="images/footer1.jpg" alt="" width="180">
+          <img class="mx-3" src="images/footer2.jpg" alt="" width="180">
+        </div>
+        <div class="footer__bottom pt-5">
+          <p>共同推動夥伴</p>
+          <div class="d-flex justify-content-center">
+            <img class="mx-3" src="images/tab1.jpg" alt="" width="80">
+            <img class="mx-3" src="images/tab2.jpg" alt="" width="80">
+            <img class="mx-3" src="images/tab3.jpg" alt="" width="80">
+            <img class="mx-3" src="images/tab4.jpg" alt="" width="80">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $('.product__tab').find('li a').click(function(){
+        var target = $(this).attr('href')
+        $(this).parent('li').addClass('current').siblings('li').removeClass('current')
+        $(target).siblings().removeClass('show')
+      })
+      $('.navbar-nav').find('.nav-link').click(function(){
+        var target = $(this).attr('href')
+        $('html, body').animate({scrollTop: $(target).offset().top - 81});
+      })
+    })
+  </script>
+</body>
+</html>
