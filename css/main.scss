@@ -119,6 +119,9 @@ a {
                 -webkit-filter:grayscale(1);
                 opacity: .5;
                 transition: all .3s ease;
+                &.img1 {
+                    width: 100px;
+                }
             }
             &.current img,&:hover img {
                 -webkit-filter: none;
@@ -186,21 +189,50 @@ a {
         margin: 0 5px;
         vertical-align: top;
         cursor: pointer;
+        color: #261f1d;
         i {
             line-height: 50px;
         }
-        img {
-            vertical-align: bottom;
-            -webkit-filter:grayscale(1);
+        &.icon{
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 24px;
+                height: 25px;
+                transform: translate(-50%, -50%);
+                background: url(../images/icon.png) center center no-repeat;
+                background-size: 100%;
+            }
         }
         &:hover {
             border-color: #e50020;
             i {
                 color: #e50020;
             }
-            img {
-                -webkit-filter: none;
+            &.icon:after{
+                background-image: url(../images/about2.png);
             }
+        }
+    }
+}
+.lottery {
+    .product__card .card {
+        .img img {
+            opacity: 1;
+        }
+        .card-body{ 
+            bottom: 0;
+            .tag {
+                margin-top: .5rem;
+                display: inline-block;
+                padding: 2px 5px;
+                border: 1px solid #fff;
+                border-radius: 5px;
+            }
+
         }
     }
 }
