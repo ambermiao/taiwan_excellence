@@ -264,6 +264,10 @@ a {
   background-image: url(../images/about2.png);
 }
 
+.lottery .product__card .card {
+  cursor: default;
+}
+
 .lottery .product__card .card .img img {
   opacity: 1;
 }
